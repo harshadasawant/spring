@@ -38,4 +38,7 @@
         <property name="address" ref="firstAddress1"></property>
     </bean>
 
+    <bean id="b" class="bean.B"></bean>
+    <bean id="a" class="bean.A" autowire="byName"></bean>
+
 </beans>
