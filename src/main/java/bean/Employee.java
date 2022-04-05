@@ -16,6 +16,6 @@ public class Employee{
 
     public void show(){
         System.out.println(id+" "+name);
-        System.out.println(address.toString());
+        System.out.println(address);
     }
 }

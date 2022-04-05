@@ -26,4 +26,16 @@
         </constructor-arg>
     </bean>
 
+    <bean id="firstAddress1" class="bean.AddressWithSetter">
+        <property name="city" value="mumbai"></property>
+        <property name="state" value="Maharashtra"></property>
+        <property name="country" value="India"></property>
+    </bean>
+
+    <bean id="emp1" class="bean.EmployeeWithSetter">
+        <property name="id" value="001"></property>
+        <property name="name" value="Harshada" ></property>
+        <property name="address" ref="firstAddress1"></property>
+    </bean>
+
 </beans>
