@@ -9,5 +9,7 @@ public class AutoWireTest {
         ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
         A a=context.getBean("a",A.class);
         a.display();
+
+
     }
 }

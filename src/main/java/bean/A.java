@@ -2,7 +2,7 @@ package bean;
 
 public class A {
     B b;
-//    public A(){System.out.println("a is created");}
+    public A(){System.out.println("a is created");}
     public B getB() {
         return b;
     }

@@ -43,12 +43,10 @@
     </bean>
 
     <bean id="b" class="bean.B"></bean>
-    <bean id="a" class="bean.A" ></bean>
+    <bean id="a" class="bean.A" autowire="byName" ></bean>
 
     <bean id="lifeCycle" class="bean.LifeCycle"></bean>
     <bean id="lifeCycleXml" class="bean.LifeCycleXml" init-method="init" destroy-method="destroy"></bean>
-
-    <bean id="lifeCycleAnnotation" class="bean.LifeCycleAnnotation"></bean>
 
 
 
