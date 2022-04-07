@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Scope;
 public class ApplicationContextConfig {
 
     @Bean
+    @Scope(value = "prototype")
     public SampleBean getBean()
     {
         return new SampleBean();
