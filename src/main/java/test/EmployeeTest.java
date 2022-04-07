@@ -12,6 +12,9 @@ public class EmployeeTest {
         s.show();
 
         EmployeeWithSetter s1=(EmployeeWithSetter) ctx.getBean("emp1");
+        EmployeeWithSetter s2=(EmployeeWithSetter) ctx.getBean("emp1");
+        s1.setName("Harshada");
         s1.show();
+        s2.show();
     }
 }
