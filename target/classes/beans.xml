@@ -36,6 +36,12 @@
         <property name="country" value="India"></property>
     </bean>
 
+    <bean id="firstAddress2" class="bean.AddressWithSetter">
+        <property name="city" value="mumbai"></property>
+        <property name="state" value="Maharashtra"></property>
+        <property name="country" value="India"></property>
+    </bean>
+
     <bean id="emp1" class="bean.EmployeeWithSetter" scope="prototype">
         <property name="id" value="001"></property>
 <!--        <property name="name" value="Harshada" ></property>-->

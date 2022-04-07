@@ -1,6 +1,24 @@
 package bean;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Student {
+
+    @Autowired
+    @Qualifier("firstAddress1")
+    private AddressWithSetter address;
+
+    public AddressWithSetter getAddress() {
+        return address;
+    }
+
+    public void setAddress(AddressWithSetter address) {
+        this.address = address;
+    }
+
     private  int id;
     private String name;
 
