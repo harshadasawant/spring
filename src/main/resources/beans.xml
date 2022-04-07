@@ -54,6 +54,8 @@
     <bean id="lifeCycle" class="bean.LifeCycle"></bean>
     <bean id="lifeCycleXml" class="bean.LifeCycleXml" init-method="init" destroy-method="destroy"></bean>
 
+    <bean id="single" class="bean.Singleton" factory-method="getSingleton"></bean>
+
 
 
 </beans>
